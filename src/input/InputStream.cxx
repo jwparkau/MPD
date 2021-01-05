@@ -56,10 +56,8 @@ gcc_pure
 static bool
 ExpensiveSeeking(const char *uri) noexcept
 {
-	return StringStartsWithCaseASCII(uri, "http://") ||
-		StringStartsWithCaseASCII(uri, "tidal://") ||
-		StringStartsWithCaseASCII(uri, "qobuz://") ||
-		StringStartsWithCaseASCII(uri, "https://");
+	return StringStartsWithCaseASCII(uri, "tidal://") ||
+		StringStartsWithCaseASCII(uri, "qobuz://");
 }
 
 bool
